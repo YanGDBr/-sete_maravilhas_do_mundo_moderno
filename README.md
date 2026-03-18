@@ -49,6 +49,8 @@ Para evitar o "inferno da especificidade", adotamos o padrão BEM:
 É estritamente **proibido** o uso de `onclick=""` diretamente no HTML. 
 * **Padrão:** Todos os eventos devem ser vinculados via **`addEventListener`** no arquivo JavaScript externo, mantendo o HTML limpo e focado na estrutura.
 
+https://excalidraw.com/#room=d586db1a3eeb33229b1f,SJJuOAth54-bO2rRylMwGg
+
 ```javascript
 // Exemplo correto
 const btnSubmit = document.querySelector('.form__button--submit');
