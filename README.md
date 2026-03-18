@@ -1,5 +1,4 @@
-# -sete_maravilhas_do_mundo_moderno
-# 🎨 Style Guide sete_maravilhas_do_mundo_moderno
+# 🎨 Style Guide Sete Maravilhas Do Mundo Moderno
 
 Este repositório serve como a "fonte da verdade" para o desenvolvimento do projeto. Abaixo estão as definições de arquitetura, padrões de escrita e estilos que devem ser seguidos por todos os colaboradores.
 
@@ -9,7 +8,7 @@ Este repositório serve como a "fonte da verdade" para o desenvolvimento do proj
 
 * **CSS Puro ou Bootstrap?** Utilizaremos **CSS Puro**. O objetivo é manter o código leve, sem dependências externas e com total controle sobre a especificidade.
 * **Uso de `:root`?** Sim. Todas as variáveis globais (cores, espaçamentos e fontes) devem ser declaradas dentro do seletor `:root` para facilitar a manutenção.
-* **Indentação:** Utilizaremos **2 espaços** (Soft Tabs) em vez de tabs.
+* **Indentação:** Utilizaremos **4 espaços** tabs normais.
 * **Comentários:** Devem ser usados para separar seções lógicas (ex: `/* --- Header Styles --- */`) ou para explicar "hacks" necessários para navegadores específicos.
 
 ---
@@ -49,8 +48,6 @@ Para evitar o "inferno da especificidade", adotamos o padrão BEM:
 É estritamente **proibido** o uso de `onclick=""` diretamente no HTML. 
 * **Padrão:** Todos os eventos devem ser vinculados via **`addEventListener`** no arquivo JavaScript externo, mantendo o HTML limpo e focado na estrutura.
 
-https://excalidraw.com/#room=d586db1a3eeb33229b1f,SJJuOAth54-bO2rRylMwGg
-
 ```javascript
 // Exemplo correto
 const btnSubmit = document.querySelector('.form__button--submit');
@@ -59,3 +56,6 @@ btnSubmit.addEventListener('click', (event) => {
   event.preventDefault();
   // lógica aqui
 });
+
+
+https://excalidraw.com/#room=d586db1a3eeb33229b1f,SJJuOAth54-bO2rRylMwGg
