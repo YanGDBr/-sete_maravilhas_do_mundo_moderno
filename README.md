@@ -103,8 +103,6 @@ O esqueleto e a disposição dos elementos devem seguir o protótipo definido no
 ### 2. Paleta de Cores
 Abaixo, cole a paleta definida no Adobe Color ou Realtime Colors:
 
-> **[COLE AQUI SUA PALETA DE CORES OU O PRINT DO ADOBE COLOR]**
-> Exemplo de aplicação sugerida:
 > * **Primary:** #XXXXXX (Botões e Títulos)
 > * **Secondary:** #XXXXXX (Destaques e Hovers)
 > * **Background:** #XXXXXX (Fundo da página)
