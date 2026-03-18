@@ -55,7 +55,7 @@ const btnSubmit = document.querySelector('.form__button--submit');
 btnSubmit.addEventListener('click', (event) => {
   event.preventDefault();
   // lógica aqui
-});
+});```
 
 ---
 
