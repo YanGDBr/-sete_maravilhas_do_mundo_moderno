@@ -103,7 +103,7 @@ O esqueleto e a disposição dos elementos devem seguir o protótipo definido no
 ### 2. Paleta de Cores
 Abaixo, cole a paleta definida no Adobe Color ou Realtime Colors:
 
-> * **Primary:** #XXXXXX (Botões e Títulos)
-> * **Secondary:** #XXXXXX (Destaques e Hovers)
-> * **Background:** #XXXXXX (Fundo da página)
-> * **Text:** #XXXXXX (Cor da fonte principal)
+> * **Primary:** #04C63B (Botões e Títulos)
+> * **Secondary:** #61BD7B (Destaques e Hovers)
+> * **Background:** #C6C6C6 (Fundo da página)
+> * **Text:** #000000 (Cor da fonte principal)
