@@ -1,0 +1,124 @@
+        :root {
+            --primary-color: #04C63B;
+            --secondary-color: #61BD7B;
+            --background-color: #C6C6C6;
+            --text-color: #000000;
+            --card-bg: #ffffff;
+            --radius: 20px;
+            --shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .header {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header__title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .header__menu {
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 1rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 1rem;
+            box-shadow: var(--shadow);
+        }
+
+        .slider {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .slider__image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: var(--radius);
+        }
+
+        .slider__btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--primary-color);
+            border: none;
+            color: white;
+            padding: 0.6rem 0.8rem;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .slider__btn:hover {
+            background: var(--secondary-color);
+        }
+
+        .slider__btn--left { left: 10px; }
+        .slider__btn--right { right: 10px; }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .card__title {
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        li{
+            margin: 10px;
+        }
+
+        @media (max-width: 992px) {
+            .main {
+                grid-template-columns: 1fr;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }

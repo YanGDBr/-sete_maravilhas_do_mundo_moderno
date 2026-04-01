@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cristo Redentor - Sete Maravilhas</title>
+
+        <link rel="stylesheet" href="assets/css/style.css">
+
+    </head>
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <div class="header__title">Muralha da China</div>
+            
+        </header>
+
+        <main class="main">
+
+            <section>
+
+                <div class="card slider">
+                    <img class="slider__image" src="assets/img/muralha.webp">
+                    <button class="slider__btn slider__btn--left">❮</button>
+                    <button class="slider__btn slider__btn--right">❯</button>
+                </div>
+
+                <div class="content">
+
+                    <div class="card">
+                        <h3 class="card__title">Descrição</h3>
+                        <p>
+                            A Grande Muralha da China é uma das construções mais impressionantes da história da humanidade. Localizada no norte da China, ela foi construída ao longo de séculos com o objetivo principal de proteger o território chinês contra invasões, especialmente de povos nômades vindos da Ásia Central.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="card__title">Informações Interessantes</h3>
+                        <ul>
+                            <li>Extensão total: mais de 21.000 km</li>
+                            <li>Início da construção: século III a.C.</li>
+                            <li>Material: terra batida, pedra e tijolos</li>
+                            <li>Patrimônio Mundial da UNESCO desde 1987</li>
+                            <li>Considerada uma das maiores obras de engenharia já feitas</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <aside class="sidebar">
+                <div class="card">
+                    <h3 class="card__title">Resumo</h3>
+                    <p>A Grande Muralha da China é uma gigantesca fortificação construída para proteger o império chinês, sendo hoje um dos maiores marcos históricos e turísticos do mundo.</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="card__title">Curiosidades</h3>
+                    <ul>
+                        <li>Ao contrário do que muitos pensam, a muralha não é visível a olho nu do espaço.</li>
+                        <li>Foi construída por milhões de trabalhadores, incluindo soldados, camponeses e prisioneiros.</li>
+                        <li>Algumas partes da muralha estão em ruínas devido à ação do tempo e à falta de preservação.</li>
+                        <li>Torres de vigilância eram usadas para comunicação com sinais de fumaça.</li>
+                        <li>A muralha atravessa diversos tipos de terreno, incluindo montanhas extremamente íngremes.   </li>
+                    </ul>
+                </div>
+
+            </aside>
+
+        </main>
+
+    </div>
+
+    <script>
+        const sliders = document.querySelectorAll('.slider');
+
+        sliders.forEach(slider => {
+            const img = slider.querySelector('.slider__image');
+            const btnLeft = slider.querySelector('.slider__btn--left');
+            const btnRight = slider.querySelector('.slider__btn--right');
+
+            const images = [
+                'assets/img/muralha.webp',
+                'assets/img/muralha2.jpg',
+                'assets/img/muralha3.jpg'
+            ];
+
+            let index = 0;
+
+            const update = () => {
+                img.src = images[index];
+            };
+
+            btnLeft.addEventListener('click', () => {
+                index = (index - 1 + images.length) % images.length;
+                update();
+            });
+
+            btnRight.addEventListener('click', () => {
+                index = (index + 1) % images.length;
+                update();
+            });
+        });
+    </script>
+</body>
+</html>
